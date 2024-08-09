@@ -1,0 +1,18 @@
+<div style="border: 1px solid black">
+  <p>Admin Component</p>
+
+  <p>{{ name | uppercase }}!</p>
+  <p>{{ "TXOSKY" | lowercase }}!</p>
+  <p>{{ name }}</p>
+  <p>{{ [1, 2, 3, 4, 5] | slice : 2 : 4 }}</p>
+
+  <p *ngFor="let item of [1, 2, 3, 4, 5] | slice : 2 : 4">{{ item }}</p>
+
+  <p>{{ auxJson | json }}</p>
+  <app-loader></app-loader>
+  <app-card></app-card>
+</div>
+
+<p *ngFor="let item of auxObservable$ | async">{{ item }}</p>
+
+<button (click)="onAdd()">Add</button>

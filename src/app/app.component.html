@@ -1,0 +1,115 @@
+<!-- <input type="text" [(ngModel)]="myStatus" />
+
+<ul>
+  <li *ngFor="let item of ['first', 'second', 'three']; let i = index">
+    <test-component
+      *ngIf="item !== 'first'"
+      [status]="item"
+      (onSendData)="printDataTest($event)"
+    ></test-component>
+  </li>
+</ul>
+
+<input type="text" [(ngModel)]="color" />
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'red'" style="color: red">
+    <test-component
+      [status]="color"
+      (onSendData)="printDataTest($event)"
+    ></test-component>
+  </li>
+  <li *ngSwitchCase="'green'" style="color: green">
+    <test-component
+      [status]="color"
+      (onSendData)="printDataTest($event)"
+    ></test-component>
+  </li>
+  <li *ngSwitchCase="'blue'" style="color: blue">
+    <test-component
+      [status]="color"
+      (onSendData)="printDataTest($event)"
+    ></test-component>
+  </li>
+  <li *ngSwitchDefault style="color: peru">
+    <test-component
+      status="noColor"
+      (onSendData)="printDataTest($event)"
+    ></test-component>
+  </li>
+</ul>
+
+<button (click)="sw = !sw">show component</button>
+<div *ngIf="sw; else myVarElse">
+  <app-test3 [name]="myStatus"> </app-test3>
+</div>
+
+<div #miDiv1>
+  <p>Mi Div 1</p>
+</div>
+
+<ng-template #myVarElse>
+  <p>Else template</p>
+</ng-template>
+
+<app-test2 name="Miguel" lastName="Diaz" (onSendData)="printData($event)">
+  <p>Contenido desde app.component</p>
+  <button>Botton app.component</button>
+</app-test2>
+
+<button (click)="swContainer = !swContainer">show component</button>
+
+<ng-container *ngIf="swContainer">
+  <p>nGContainer</p>
+</ng-container>
+
+<input type="text" [(ngModel)]="color" />
+<input type="number" [(ngModel)]="fontSize" />
+<div
+  [style.border]="'4px solid ' + color"
+  [style.background]="color"
+  [style.fontSize.px]="fontSize"
+>
+  <p
+    [ngStyle]="{
+      color: color,
+      'font-size.px': fontSize,
+      'background-color': 'lightblue',
+      border: '2px solid black'
+    }"
+  >
+    div con estilos
+  </p>
+</div>
+
+<div
+  [ngClass]="{
+    est1: color === 'red',
+    est2: color === 'green',
+    est3: color === 'blue'
+  }"
+>
+  <p>Estilos con ngClass</p>
+</div> 
+
+<button appDirectiveTest="pink" (click)="onAddVideo()">add Video</button>
+<button (click)="personaUnsubscribe()">Unsuscribe</button>
+
+<p [appDirectiveTest]="'red'" (outPutTest)="test($event)">
+  Mi primera directiva de atributo
+</p>
+
+<input type="checkbox" [(ngModel)]="sw" /> ngIfTxosky
+<div *ngIfTxosky="sw">
+  <p>structural directive</p>
+</div>
+
+<div #myDiv>
+  <p>{{ myDiv }}</p>
+</div>
+<test-component #myCompTest></test-component>
+
+<input type="text" #myDiv2 />
+<button (click)="onShowLocalVars()">show local vars</button> -->
+
+<p>APP</p>
+<app-admin></app-admin>

@@ -1,0 +1,8 @@
+<div style="border: 1px solid blue">
+  <button (click)="onShowData()">Show Data</button>
+  {{ myVar }}
+  <input type="number" [(ngModel)]="myVar" />
+  <input type="number" [(ngModel)]="myVar2" />
+  <button (click)="test($event)">Suma Numeros</button>
+  <ng-content></ng-content>
+</div>
